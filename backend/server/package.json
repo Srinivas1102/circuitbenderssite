@@ -1,0 +1,45 @@
+{
+  "name": "circuitbenders",
+  "version": "1.0.0",
+  "description": "circuitBenders-bot",
+  "main": "index.js",
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "backend": "nodemon index.js",
+    "frontend": "npm run front --prefix client",
+    "data-import": "node ./routes/seederScript.js",
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
+  },
+  "author": "Sasidharan",
+  "license": "ISC",
+  "dependencies": {
+    "actions-on-google": "^2.14.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dialogflow": "^0.8.2",
+    "dialogflow-fulfillment": "^0.6.1",
+    "dotenv": "^10.0.0",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "firebase": "^7.24.0",
+    "formidable": "^1.2.2",
+    "heroku": "^7.59.0",
+    "https": "^1.0.0",
+    "isomorphic-fetch": "^3.0.0",
+    "mongodb": "^4.1.1",
+    "mongoose": "^5.13.8",
+    "ngrok": "^4.2.2",
+    "node-fetch": "^3.0.0",
+    "paytmchecksum": "^1.5.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.4"
+  }
+}
